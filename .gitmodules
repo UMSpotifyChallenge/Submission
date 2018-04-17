@@ -1,0 +1,19 @@
+[submodule "hon"]
+	path = hon
+	url = https://github.com/UMSpotifyChallenge/hon.git
+[submodule "rwr_baseline"]
+	path = rwr_baseline
+	url = https://github.com/UMSpotifyChallenge/RWR_baseline.git
+[submodule "db_adapter"]
+	path = db_adapter
+	url = https://github.com/UMSpotifyChallenge/DatabaseAdapter.git
+	branch = spotify_api
+[submodule "synthesis"]
+	path = synthesis
+	url = https://github.com/UMSpotifyChallenge/SpotifySynthesis.git
+[submodule "hadoop_statistics"]
+	path = hadoop_statistics
+	url = https://github.com/UMSpotifyChallenge/hadoop_playlist_statistics.git
+[submodule "mesh_hypergraph"]
+	path = mesh_hypergraph
+	url = https://github.com/UMSpotifyChallenge/MESH.git
