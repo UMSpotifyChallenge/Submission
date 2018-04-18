@@ -7,14 +7,17 @@ Our project explores different methods for Automatic Playlist Continuation. Spec
 
 The git repo for this project can be seen at https://github.com/UMSpotifyChallenge/Submission.
 
-## makefile
+## Makefile
 
 The makefile can be used to test parts of the code. Considering the complex and multi-purpose nature of the code structure, not every line of code will be run through the makefile. Full excerising of the code would be undesirable anyway, as it would take days/weeks to finish the makefile.
 
 There are 4 make commands available
 
 - data
-
+  - Must have MySQL instance setup
+  - Must have installed Ruby on Rails
+  - Must have downloaded Million Playlist Dataset from Spotify
+  - This will load MPD and Spotify API response to the specified DB tables.
 - RWR
   - Must be on hadoop servers
   - This will run RWR on the random 1000 playlist set. Results will be in /RWR_baseline directory.
