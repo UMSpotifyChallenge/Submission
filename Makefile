@@ -19,14 +19,5 @@ HON :
   cd hon; python evaluation/hon-pagerank.py --data hon_training_1000.txt --test hon_testing_1000.txt
   cd hon; mkdir results; cp data/rank* results/; cd results; python ../evaluation/evaluation.py --size 35661 --path ./; mv result* ..
 
-RWR :
-  cd RWR_baseline/dataProcess; python convertToOldFrmt.py 0.80; python makeEdgeLists.py;
-  cd RWR_baseline/dataProcess/playlistSplit; cp ../songIDToSongNum.p .; python genTeleSets.py 0.50;
-  cd RWR_baseline/dataProcess; ./base_RWR.sh
-
-HON :
-  cd hon; python pyHON/main.py --data hon_training_10000.txt
-  cd hon; python evaluation/hon-pagerank.py --data hon_training_10000.txt --test hon_testing_10000.txt
-
 hypergraph :
   cd MESH; ./runRWR.sh
