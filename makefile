@@ -10,3 +10,4 @@ RWR : RWR_1000_getdata
 HON :
 
 hypergraph :
+  bash MESH/runRWR.sh
