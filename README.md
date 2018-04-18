@@ -11,6 +11,19 @@ The git repo for this project can be seen at https://github.com/UMSpotifyChallen
 
 The makefile can be used to test parts of the code. Considering the complex and multi-purpose nature of the code structure, not every line of code will be run through the makefile. Full excerising of the code would be undesirable anyway, as it would take days/weeks to finish the makefile.
 
+There are 4 make commands available
+
+- data
+
+- RWR
+  - Must be on hadoop servers
+  - This will run RWR on the random 1000 playlist set. Results will be in /RWR_baseline directory.
+- HON
+  - This will run HON on the random 1000 playlist set. Results will be in /hon directory.
+- hypergraph
+  - Must be on flux servers
+  - This will run hypergraph on the random 1000 playlist set. Results will be in /spotify_hypergraph_playlist directory.
+
 
 ## Hierarchy
 - Data (/DatabaseAdapter, /SpotifySynthesis, /hadoop_playlist_statistics)
